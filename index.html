@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$GOAT | DEGEN GOAT COIN - MOON OR BROKE 🐐🚀</title>
+    <link rel="icon" type="image/png" href="goatcoin.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="mountain-bg"></div>
+    <div id="goat-particles"></div>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-goat">🐐</span>
+                <span class="logo-text">GOAT</span>
+            </div>
+            <div class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#tokenomics" class="nav-link">Tokenomics</a>
+                <a href="#roadmap" class="nav-link">Roadmap</a>
+                <a href="https://pump.fun/coin/GNHW5JetZmW85vAU35KyoDcYoSd3sNWtx5RPMTDJpump" target="_blank" class="nav-cta">Buy $GOAT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Split Layout -->
+    <section class="hero">
+        <div class="hero-wrapper">
+            <div class="hero-left">
+                <div class="badge">doge + goat = a better world</div>
+                <h1 class="hero-title">
+                    <span class="highlight">$JOEY</span><br>
+                    COIN
+                </h1>
+                <p class="hero-description">
+                    HISTORY IN THE MAKING. In 2014, Dogecoin co-creator @ummjackson had ONE vision: 
+                    "doge + goat = a better world." Today, that prophecy comes to life. 📈💎
+                </p>
+                
+                <!-- Live Stats Row -->
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <span class="stat-number" id="marketCap">Loading...</span>
+                        <span class="stat-text">Market Cap</span>
+                    </div>
+                    <div class="stat-divider">|</div>
+                    <div class="stat-item">
+                        <span class="stat-number" id="price">Loading...</span>
+                        <span class="stat-text">Price</span>
+                    </div>
+                    <div class="stat-divider">|</div>
+                    <div class="stat-item">
+                        <span class="stat-number">#1</span>
+                        <span class="stat-text">GOAT Token</span>
+                    </div>
+                </div>
+
+                <div class="hero-actions">
+                    <button class="btn-primary" onclick="window.open('https://pump.fun/coin/GNHW5JetZmW85vAU35KyoDcYoSd3sNWtx5RPMTDJpump', '_blank')">
+                        <span class="btn-icon">🚀</span>
+                        <span class="btn-text">APE IN NOW</span>
+                    </button>
+                    <button class="btn-outline" onclick="window.open('https://dexscreener.com/solana/GNHW5JetZmW85vAU35KyoDcYoSd3sNWtx5RPMTDJpump', '_blank')">
+                        <span class="btn-icon">📊</span>
+                        <span class="btn-text">VIEW CHART</span>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                <div class="hero-visual">
+                    <div class="goat-mountain">
+                        <div class="mountain-peak">⛰️</div>
+                        <div class="goat-icon">🐐</div>
+                        <div class="success-indicators">
+                            <div class="indicator">📈</div>
+                            <div class="indicator">💎</div>
+                            <div class="indicator">🔥</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Contract Address Bar -->
+        <div class="contract-bar">
+            <div class="contract-wrapper">
+                <span class="contract-label">Contract Address:</span>
+                <div class="contract-address-group">
+                    <code class="contract-code" id="contractAddress">GNHW5JetZmW85vAU35KyoDcYoSd3sNWtx5RPMTDJpump</code>
+                    <button class="copy-btn" onclick="copyContract()">
+                        <span class="copy-icon">📋</span>
+                        <span class="copy-text">Copy</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section - Horizontal Cards -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">THE PROPHECY</h2>
+                <p class="section-subtitle">The only other animal coin conceived by Doge's creator</p>
+            </div>
+            
+            <div class="features-row">
+                <div class="feature-card">
+                    <div class="feature-number">01</div>
+                    <div class="feature-content">
+                        <h3>DOGECOIN ORIGINS</h3>
+                        <p>Created by Dogecoin co-founder @ummjackson in 2014. Not just another meme - this is HISTORY.</p>
+                    </div>
+                    <div class="feature-icon">🏔️</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-number">02</div>
+                    <div class="feature-content">
+                        <h3>THE PROPHECY</h3>
+                        <p>"Doge + Goat = A Better World" - Not just a phrase. A movement. The evolution of culture.</p>
+                    </div>
+                    <div class="feature-icon">💎</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-number">03</div>
+                    <div class="feature-content">
+                        <h3>BETA TO DOGE</h3>
+                        <p>The next chapter in meme history. While others copy, we ARE the original vision brought to life.</p>
+                    </div>
+                    <div class="feature-icon">👑</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tokenomics - Bento Box Layout -->
+    <section id="tokenomics" class="tokenomics">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">TOKENOMICS</h2>
+                <p class="section-subtitle">Built on the foundation of meme coin history</p>
+            </div>
+            
+            <div class="bento-grid">
+                <div class="bento-card large">
+                    <div class="card-header">
+                        <h3>Total Supply</h3>
+                        <span class="card-icon">🪙</span>
+                    </div>
+                    <div class="big-number">1B</div>
+                    <p class="card-desc">Billion tokens ready to moon - perfect supply for maximum gains</p>
+                </div>
+                
+                <div class="bento-card">
+                    <div class="card-header">
+                        <h3>Market Cap</h3>
+                        <span class="card-icon">📊</span>
+                    </div>
+                    <div class="live-number" id="tokenomicsMarketCap">Loading...</div>
+                </div>
+                
+                <div class="bento-card">
+                    <div class="card-header">
+                        <h3>Current Price</h3>
+                        <span class="card-icon">💰</span>
+                    </div>
+                    <div class="live-number" id="tokenomicsPrice">Loading...</div>
+                </div>
+                
+                <div class="bento-card wide">
+                    <div class="card-header">
+                        <h3>Historical Proof</h3>
+                        <span class="card-icon">📜</span>
+                    </div>
+                    <p class="advantage-text">GitHub archives from 2014 prove @ummjackson (Dogecoin co-creator) envisioned "doge + goat = better world". This isn't just another meme - it's HISTORY.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap - Timeline -->
+    <section id="roadmap" class="roadmap">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">THE JOURNEY</h2>
+                <p class="section-subtitle">From 2014 vision to 2025 reality 🌙</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item completed">
+                    <div class="timeline-marker">✅</div>
+                    <div class="timeline-content">
+                        <h3>THE VISION (2014)</h3>
+                        <p>Dogecoin co-creator @ummjackson creates "doge + goat = better world"</p>
+                        <span class="timeline-status">LEGEND</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-item active">
+                    <div class="timeline-marker">🔥</div>
+                    <div class="timeline-content">
+                        <h3>THE AWAKENING</h3>
+                        <p>Community discovers the prophecy and brings it to life</p>
+                        <span class="timeline-status">RISING</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">🚀</div>
+                    <div class="timeline-content">
+                        <h3>THE PROPHECY</h3>
+                        <p>Doge + Goat finally creates the better world Jackson envisioned</p>
+                        <span class="timeline-status">DESTINY</span>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">👑</div>
+                    <div class="timeline-content">
+                        <h3>VALHALLA</h3>
+                        <p>Total crypto domination. Other coins bow down.</p>
+                        <span class="timeline-status">INEVITABLE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2 class="cta-title">JOIN THE PROPHECY</h2>
+                <p class="cta-text">Be part of meme coin history. From Doge's creator to your portfolio.</p>
+                <div class="cta-buttons">
+                    <button class="btn-cta-primary" onclick="window.open('https://pump.fun/coin/GNHW5JetZmW85vAU35KyoDcYoSd3sNWtx5RPMTDJpump', '_blank')">
+                        SEND IT 🚀
+                    </button>
+                    <button class="btn-cta-secondary" onclick="window.open('https://x.com/i/communities/1960462312063525266', '_blank')">
+                        JOIN CULT
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="footer-goat">🐐</span>
+                        <span class="footer-name">GOAT</span>
+                    </div>
+                    <p class="footer-tagline">doge + goat = a better world</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Community</h4>
+                        <a href="https://x.com/GoatcoinOnSOL_" target="_blank">Twitter</a>
+                        <a href="https://x.com/i/communities/1960462312063525266" target="_blank">Community</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Trade</h4>
+                        <a href="https://pump.fun/coin/GNHW5JetZmW85vAU35KyoDcYoSd3sNWtx5RPMTDJpump" target="_blank">Pump.fun</a>
+                        <a href="https://dexscreener.com/solana/GNHW5JetZmW85vAU35KyoDcYoSd3sNWtx5RPMTDJpump" target="_blank">Chart</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-disclaimer">Not financial advice. DYOR or get rekt. We're just here for the chaos.</p>
+                <p class="footer-credit">Built by <a href="https://t.me/automatecrypto" target="_blank">TechAddict</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
